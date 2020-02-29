@@ -16,12 +16,14 @@ public class Task2 {
     }
 
     boolean numberInRange(Integer number, Integer leftBound, Integer rightBound, Boolean inclusively) {
-        if ((number == null) || (leftBound == null) || (rightBound == null) || (inclusively == null))
+        if ((number == null) || (leftBound == null) || (rightBound == null) || (inclusively == null)) {
             return false;
-        if (inclusively)
+        }
+        if (inclusively) {
             return (number >= leftBound) && (number <= rightBound);
-        else
+        } else {
             return (number > leftBound) && (number < rightBound);
+        }
     }
 
     boolean atLeastOneIsDigit(char c1, char c2, char c3) {
